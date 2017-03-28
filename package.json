@@ -4,6 +4,7 @@
   "description": "A cards against humanity project for online use with custom expansions",
   "dependencies": {
     "express": "^4.15.2",
+    "ngrok": "^2.2.6",
     "socket.io": "^1.7.3"
   }
 }

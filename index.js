@@ -1,4 +1,5 @@
 var app = require('express')();
+var ngrok = require('ngrok');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
@@ -18,6 +19,10 @@ io.on('connection', function(socket){
     socket.on('chat:message:send', function(obj){
         io.emit('chat:message:send', obj);
     });
+});
+
+ngrok.connect(3000, function (err, url) {
+    console.log('ngrok connected at ' + url);
 });
 
 http.listen(3000, function(){
