@@ -19,7 +19,7 @@ Then go to http://localhost:3000 - or copy and paste the ngrok given in the comm
 
 ## Todo List
 
-If you think this isn't a complete todo list, open up an issue and tell me what you'd like!
+If you think this isn't a complete todo list, open up an [issue](https://github.com/zeraphie/colours-against-hate/issues) and tell me what you'd like!
 
 - [ ] Add channels for separate game instances - [this is helpful](https://gist.github.com/crtr0/2896891)
 - [ ] User interface
