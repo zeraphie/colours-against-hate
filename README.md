@@ -15,4 +15,4 @@ Spin up a dev server using - Actual server yet to come!
 node index.js
 ```
 
-Then go to http://localhost:3000
+Then go to http://localhost:3000 - or copy and paste the ngrok given in the command line if you want others to connect!
