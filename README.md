@@ -25,14 +25,19 @@ If you think this isn't a complete todo list, open up an issue and tell me what 
 - [ ] User interface
     - [ ] Make a proper design!
     - [ ] Connection messages - User is connected/disconnected
+        - [ ] Add desktop/mobile notifications for connection messages
     - [ ] Scores - How many points the user has scored
+    - [ ] Add user timeout + message
+        - [ ] Add desktop/mobile notifications for timeouts!
 - [ ] Chat
     - [ ] Make a proper design!
     - [ ] Add limited markdown support
     - [ ] Add some emoji support?
+    - [ ] Add desktop/mobile notifications for chat messages
 - [ ] Cards
     - [ ] Make a proper design!
     - [ ] Selection - Refine card selection stuff
+        - [ ] Add desktop/mobile notifications for when a new black card is shown
     - [ ] Animations (use [velocity](https://gist.github.com/crtr0/2896891)?) Maybe based on the old hearts window game?
     - [ ] Trigger scoring
     - [ ] Add card lists
