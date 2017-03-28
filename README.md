@@ -12,7 +12,7 @@ npm install
 ## Usage
 Spin up a dev server using - Actual server yet to come!
 ```bash
-node server.js
+npm start
 ```
 
 Then go to http://localhost:3000 - or copy and paste the ngrok given in the command line if you want others to connect!
