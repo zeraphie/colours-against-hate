@@ -1,0 +1,83 @@
+.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 9001;
+}
+
+.name-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 288px;
+    height: 106px;
+    background: #ddd;
+    box-shadow: 0 0 50px rgba(0,0,0,1);
+
+    label {
+        display: block;
+        position: relative;
+        margin: 16px auto;
+        width: calc(100% - 32px);
+        color: #333;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .input-wrapper {
+        display: block;
+        position: relative;
+        margin: 16px auto;
+        width: calc(100% - 32px);
+    }
+
+    input {
+        display: block;
+        position: relative;
+        float: left;
+        padding: 0 10px;
+        height: 38px;
+        line-height: 38px;
+        width: calc(100% - 91px);
+        margin-right: 16px;
+        border: none;
+        background: #fff;
+        border-bottom: 2px solid transparent;
+        transition: border 0.3s;
+
+        &:hover {
+            border-bottom-color: rgba(0,0,0,0.4);
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom-color: rgba(0,0,0,0.6);
+        }
+    }
+
+    button {
+        display: block;
+        position: relative;
+        float: left;
+        width: 75px;
+        height: 38px;
+        line-height: 38px;
+        background: rgba(0,0,0,0.2);
+        border: none;
+        transition: background 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0,0,0,0.4);
+        }
+
+        &:focus {
+            outline: none;
+            background: rgba(0,0,0,0.6);
+        }
+    }
+}

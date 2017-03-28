@@ -12,7 +12,7 @@ npm install
 ## Usage
 Spin up a dev server using - Actual server yet to come!
 ```bash
-node index.js
+node server.js
 ```
 
 Then go to http://localhost:3000 - or copy and paste the ngrok given in the command line if you want others to connect!
@@ -43,5 +43,6 @@ If you think this isn't a complete todo list, open up an issue and tell me what 
     - [ ] Get a domain! Maybe colours-against-hate.io?
     - [ ] Get a server! Need a node js production server I guess :p
 - [ ] Code
-    - [ ] Add an asset compiler/vueify?
+    - [x] Add an asset compiler?
+        - [ ] Possibly change to vue/vueify?
     - [ ] Modularise this project!

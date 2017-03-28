@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Colours Against Hate</title>
+        <style></style>
+        <link rel="stylesheet subresource" href="/build/css/master.css">
+    </head>
+    <body>
+        <div class="intro-screen">
+            <div class="name-input">
+                <form method="post" id="username-input">
+                    <label for="username">Please enter a username</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="username" name="username" placeholder="Enter a name...">
+                        <button type="submit" name="button">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="cah-screen inactive">
+            <div class="game">
+                <div class="cards">
+                    <a href="#" class="card white">Select 1</a>
+                    <a href="#" class="card white">Select 2</a>
+                    <a href="#" class="card white">Select 3</a>
+                    <a href="#" class="card white">Select 4</a>
+                    <a href="#" class="card white">Select 5</a>
+                    <a href="#" class="card white">Select 6</a>
+                </div>
+                <div class="selected-cards" id="selected-cards"></div>
+            </div>
+            <div class="chat">
+                <ul class="sent-messages" id="sent-messages"></ul>
+                <form method="post" id="message">
+                    <input id="m" autocomplete="off" /><button>Send</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/build/js/master.js"></script>
+    </body>
+</html>

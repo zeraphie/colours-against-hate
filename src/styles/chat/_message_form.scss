@@ -1,0 +1,56 @@
+.chat form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 48px;
+    background: rgba(0,0,0,0.1);
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 -2px 3px rgba(0,0,0,0.3);
+    z-index: 2;
+
+    input,
+    button {
+        height: 38px;
+        line-height: 38px;
+        padding: 0 10px;
+        position: relative;
+        float: left;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input {
+        border: none;
+        width: calc(100% - 80px);
+        margin-right: 5px;
+        border-bottom: 2px solid transparent;
+        transition: border 0.3s;
+
+        &:hover {
+            border-bottom-color: rgba(0,0,0,0.4);
+        }
+
+        &:focus {
+            border-bottom-color: rgba(0,0,0,0.6);
+        }
+    }
+
+    button {
+        width: 75px;
+        background: rgba(0,0,0,0.2);
+        border: none;
+        transition: background 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0,0,0,0.3);
+        }
+
+        &:focus {
+            background: rgba(0,0,0,0.4);
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.chat .sent-messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 48px);
+    overflow: auto;
+
+    li {
+        padding: 10px;
+
+        &.current-user {
+            text-align: right;
+        }
+
+        &:not(.current-user):before {
+            content: attr(data-user);
+            margin-right: 10px;
+            color: #08c;
+        }
+
+        &.current-user:after {
+            content: attr(data-user);
+            margin-left: 10px;
+            color: #08c;
+        }
+
+        &.typing:not(.current-user):before,
+        &.typing.current-user:after {
+            content: attr(data-user) " is typing...";
+        }
+
+        &:nth-child(odd) {
+            background: rgba(0,0,0,0.1);
+        }
+    }
+}
