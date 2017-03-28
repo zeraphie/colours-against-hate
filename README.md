@@ -16,3 +16,32 @@ node index.js
 ```
 
 Then go to http://localhost:3000 - or copy and paste the ngrok given in the command line if you want others to connect!
+
+## Todo List
+
+If you think this isn't a complete todo list, open up an issue and tell me what you'd like!
+
+- [ ] Add channels for separate game instances - [this is helpful](https://gist.github.com/crtr0/2896891)
+- [ ] User interface
+    - [ ] Make a proper design!
+    - [ ] Connection messages - User is connected/disconnected
+    - [ ] Scores - How many points the user has scored
+- [ ] Chat
+    - [ ] Make a proper design!
+    - [ ] Add limited markdown support
+    - [ ] Add some emoji support?
+- [ ] Cards
+    - [ ] Make a proper design!
+    - [ ] Selection - Refine card selection stuff
+    - [ ] Animations (use [velocity](https://gist.github.com/crtr0/2896891)?) Maybe based on the old hearts window game?
+    - [ ] Trigger scoring
+    - [ ] Add card lists
+        - [ ] Separate expansions containing black and white cards
+        - [ ] Dynamic selection of cards to include in the game
+        - [ ] Method for users to add their own? Perhaps PRs?
+- [ ] Server
+    - [ ] Get a domain! Maybe colours-against-hate.io?
+    - [ ] Get a server! Need a node js production server I guess :p
+- [ ] Code
+    - [ ] Add an asset compiler/vueify?
+    - [ ] Modularise this project!
