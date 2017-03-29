@@ -48,6 +48,7 @@ If you think this isn't a complete todo list, open up a new [issue](https://gith
     - [ ] Get a domain! Maybe colours-against-hate.io?
     - [ ] Get a server! Need a node js production server I guess :p
 - [ ] Code
-    - [x] Add an asset compiler?
+    - [x] Add an asset compiler? Used gulp with es6/scss support
+        - [ ] Convert code to ES6
         - [ ] Possibly change to vue/vueify?
     - [ ] Modularise this project!
