@@ -36,18 +36,27 @@ If you think this isn't a complete todo list, open up a new [issue](https://gith
     - [ ] Scores - How many points the user has scored
     - [ ] Add user timeout + message
         - [ ] Add desktop/mobile notifications for timeouts!
+    - [ ] Create config interface - After username has been entered?
+        - [ ] Select which card sets to be included
+        - [ ] Select if blank cards are added and how many
+        - [ ] Select when scoring should stop (i.e. someone's won)
+        - [ ] Channel creator
+            - [ ] Password protect some channels
 - [ ] Chat
     - [ ] Make a proper design!
     - [ ] Add limited markdown support
     - [ ] Add some emoji support?
     - [ ] Add desktop/mobile notifications for chat messages
+    - [ ] Add blank cards
 - [ ] Cards
     - [ ] Make a proper design!
     - [ ] Selection - Refine card selection stuff
         - [ ] Add desktop/mobile notifications for when a new black card is shown
-    - [ ] Animations (use [velocity](https://gist.github.com/crtr0/2896891)?) Maybe based on the old hearts window game?
-    - [ ] Trigger scoring
+    - [ ] Add Card Czar
+    - [ ] Animations (use [velocity](http://velocityjs.org/)?) Maybe based on the old hearts window game?
+    - [ ] Trigger scoring when Card Czar picks a white card
     - [ ] Add card lists
+        - [ ] Figure out layout for JSON
         - [ ] Separate expansions containing black and white cards
         - [ ] Dynamic selection of cards to include in the game
         - [ ] Method for users to add their own? Perhaps PRs?

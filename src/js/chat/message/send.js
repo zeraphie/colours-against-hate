@@ -3,12 +3,12 @@ function chatMessageSend() {
         e.preventDefault();
 
         if (document.getElementById('m').value) {
-            app.socket.emit(
+            config.socket.emit(
                 'chat:message:send',
                 {
                     text: document.getElementById('m').value,
                     time: (new Date()).getTime(),
-                    user: app.user
+                    user: config.user
                 }
             );
 
@@ -18,7 +18,7 @@ function chatMessageSend() {
         return false;
     });
 
-    app.socket.on('chat:message:send', function (message) {
+    config.socket.on('chat:message:send', function (message) {
         var messages = document.getElementById('sent-messages');
 
         if (messages.querySelector('.typing[data-user="' + message.user + '"]')) {
@@ -30,7 +30,7 @@ function chatMessageSend() {
         el.setAttribute('data-timestamp', message.time);
         el.setAttribute('data-user', message.user);
 
-        if (app.isCurrentUser(message.user)) {
+        if (config.isCurrentUser(message.user)) {
             el.classList.add('current-user');
         }
 

@@ -50,17 +50,17 @@ gulp.task('js', ['clean:js'], function() {
         src + '/js/dependencies/helper.js',
 
         // General setup of the app
-        src + '/js/dependencies/app.js',
+        src + '/js/dependencies/config.js',
 
         // Setup chat then all the direct descendants of the folder and then
         // subdescendents
         src + '/js/chat/*.js',
         src + '/js/chat/**/*.js',
 
-        // Setup cards then all the direct descendants of the folder and then
+        // Setup game then all the direct descendants of the folder and then
         // subdescendents
-        src + '/js/cards/*.js',
-        src + '/js/cards/**/*.js',
+        src + '/js/game/*.js',
+        src + '/js/game/**/*.js',
 
         // Init!
         src + '/js/client.js'

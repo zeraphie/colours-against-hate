@@ -1,14 +1,14 @@
-function cardSelected(){
+function cardsSelected(){
     document.querySelectorAll('.game .cards a').forEach(function(link){
         link.addEventListener('click', function(e){
             e.preventDefault();
 
-            app.socket.emit(
+            config.socket.emit(
                 'cards:selected',
                 {
                     text: e.target.textContent,
                     time: (new Date()).getTime(),
-                    user: app.user
+                    user: config.user
                 }
             );
 
@@ -16,7 +16,7 @@ function cardSelected(){
         });
     });
 
-    app.socket.on('cards:selected', function(selected){
+    config.socket.on('cards:selected', function(selected){
         var el = helpers.append(
             'li',
             selected.text,
@@ -26,7 +26,7 @@ function cardSelected(){
         el.setAttribute('data-timestamp', selected.time);
         el.setAttribute('data-user', selected.user);
 
-        if(app.isCurrentUser(selected.user)){
+        if(config.isCurrentUser(selected.user)){
             el.classList.add('current-user');
         }
     });

@@ -3,11 +3,11 @@ function chatMessageTyping() {
         e.preventDefault();
 
         if (e.target.value) {
-            app.socket.emit(
+            config.socket.emit(
                 'chat:message:typing',
                 {
                     time: (new Date()).getTime(),
-                    user: app.user
+                    user: config.user
                 }
             );
         }
@@ -15,7 +15,7 @@ function chatMessageTyping() {
         return false;
     });
 
-    app.socket.on('chat:message:typing', function (message) {
+    config.socket.on('chat:message:typing', function (message) {
         var messages = document.getElementById('sent-messages');
 
         if (!messages.querySelector('.typing[data-user="' + message.user + '"]')) {
@@ -26,7 +26,7 @@ function chatMessageTyping() {
 
             el.classList.add('typing');
 
-            if (app.isCurrentUser(message.user)) {
+            if (config.isCurrentUser(message.user)) {
                 el.classList.add('current-user');
             }
 
