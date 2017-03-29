@@ -9,6 +9,13 @@ Install all the required packages with this below
 npm install
 ```
 
+If you want to rebuild the assets, the project uses gulp with the follow tasks setup
+```bash
+gulp # Run gulp build followed by gulp watch
+gulp build # Build all the resources
+gulp watch # Watch for any changes in the files setup to be watched, and re-run the relevant task
+```
+
 ## Usage
 Spin up a dev server using - Actual server yet to come!
 ```bash
